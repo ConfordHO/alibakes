@@ -36,7 +36,7 @@ const Hero = () => {
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         <div className="mb-8 animate-fade-in">
           <div className="inline-block bg-white/10 backdrop-blur-sm px-6 py-2 rounded-full border-2 border-white/30 mb-6">
-            <span className="text-white font-medium">📍 Based in Chilenje, Lusaka | Serving All Zambia</span>
+            <span className="text-white font-medium">📍 Based in Lusaka | Serving All Zambia</span>
           </div>
         </div>
         

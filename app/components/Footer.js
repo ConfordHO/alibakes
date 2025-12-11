@@ -32,7 +32,7 @@ const Footer = () => {
             <ul className="space-y-2 text-orange-200">
               <li>📱 +260 978 876 201</li>
               <li>📧 alicechitumba259@gmail.com</li>
-              <li>📍 Chilenje, Lusaka</li>
+              <li>📍 Lusaka, Zambia </li>
             </ul>
           </div>
 
