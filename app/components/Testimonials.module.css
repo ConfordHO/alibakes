@@ -1,0 +1,173 @@
+.testimonials {
+  background: linear-gradient(135deg, #FFF9F5 0%, #FFF3E0 100%);
+}
+
+.testimonialCarousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.testimonialCard {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  max-width: 700px;
+  text-align: center;
+}
+
+.rating {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimonialText {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.testimonialAuthor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.testimonialAuthor strong {
+  color: #8B4513;
+  font-size: 1.1rem;
+}
+
+.testimonialAuthor span {
+  color: #888;
+  font-size: 0.95rem;
+}
+
+.date {
+  font-size: 0.85rem !important;
+  color: #999 !important;
+}
+
+.navButton {
+  background: #FF6B35;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(255,107,53,0.3);
+}
+
+.navButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(255,107,53,0.5);
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 4rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #D2691E;
+  border: none;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+
+.dot:hover {
+  opacity: 0.6;
+}
+
+.activeDot {
+  opacity: 1;
+}
+
+.allTestimonials h3 {
+  text-align: center;
+  color: #8B4513;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.smallTestimonialCard {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.smallTestimonialCard:hover {
+  transform: translateY(-5px);
+}
+
+.smallRating {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.smallText {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.smallAuthor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.smallAuthor strong {
+  color: #8B4513;
+  font-size: 1rem;
+}
+
+.smallAuthor span {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .testimonialCarousel {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .testimonialCard {
+    padding: 2rem;
+  }
+
+  .navButton {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .testimonialsGrid {
+    grid-template-columns: 1fr;
+  }
+}
