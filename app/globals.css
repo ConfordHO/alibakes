@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   margin: 0;
@@ -10,31 +12,46 @@ body {
   font-family: 'Georgia', serif;
   line-height: 1.6;
   color: #333;
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-section {
-  padding: 5rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+/* Animation keyframes */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-h2 {
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  text-align: center;
-  color: #8B4513;
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.8s ease-out;
+}
+
+/* Ensure images load properly */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 @media (max-width: 768px) {
-  section {
-    padding: 3rem 1rem;
-  }
-  
-  h2 {
-    font-size: 2rem;
+  body {
+    font-size: 14px;
   }
 }

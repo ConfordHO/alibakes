@@ -2,8 +2,6 @@
 
 import React, { useState} from 'react';
 
-import styles from './Testimonials.module.css';
-
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
